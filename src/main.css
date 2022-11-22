@@ -1,0 +1,423 @@
+/* ===== Google Font Import - Poformsins ===== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #8ea7eb;
+}
+
+.container{
+    position: relative;
+    max-width: 430px;
+    width: 100%;
+    background: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 0 20px;
+}
+
+.container .forms{
+    display: flex;
+    align-items: center;
+    height: 440px;
+    width: 200%;
+    transition: height 0.2s ease;
+}
+
+
+.container .form{
+    width: 50%;
+    padding: 30px;
+    background-color: #fff;
+    transition: margin-left 0.18s ease;
+}
+
+
+.container .form .title{
+    position: relative;
+    font-size: 27px;
+    font-weight: 600;
+}
+
+.form .title::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+    background-color: #4070f4;
+    border-radius: 25px;
+}
+
+.form .input-field{
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.input-field input{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding: 0 35px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    border-bottom: 2px solid #ccc;
+    border-top: 2px solid transparent;
+    transition: all 0.2s ease;
+}
+
+
+.input-field input:is(:focus, :valid){
+    border-bottom-color: #4070f4;
+}
+
+.input-field i{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #999;
+    font-size: 23px;
+    transition: all 0.2s ease;
+}
+
+
+
+.input-field input:is(:focus, :valid) ~ i{
+    color: #4070f4;
+}
+
+.input-field i.icon{
+    left: 0;
+}
+.input-field i.showHidePw{
+    right: 0;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.form .checkbox-text{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.checkbox-text .checkbox-content{
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-content input{
+    margin: 0 8px -2px 4px;
+    accent-color: #4070f4;
+}
+
+.form .text{
+    color: #333;
+    font-size: 14px;
+}
+
+.form a.text{
+    color: #4070f4;
+    text-decoration: none;
+}
+.form a:hover{
+    text-decoration: underline;
+}
+
+.form .button{
+    margin-top: 35px;
+}
+
+.form .button input{
+    border: none;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border-radius: 6px;
+    background-color: #4070f4;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.button input:hover{
+    background-color: #265df2;
+}
+
+.form .login-signup{
+    margin-top: 1px;
+    text-align: center;
+}
+
+.renderUrl{
+    font-size: 5px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.text-copiado{
+    border: none;
+}
+
+@media only screen and (max-width: 600px) {
+  
+    .container.active .forms{
+        height: 200px;       
+    }
+    .container .form .title{
+        position: relative;
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .form .title::before{    
+        width: 20px;
+    }
+    .container{   
+        max-width: 410px;
+        width: 90%;
+    }
+ 
+    
+  }
+
+
+
+
+  
+
+.sumir{
+    display: none;
+}
+
+
+
+
+.select-menu{  
+    margin: 20px auto;
+    margin-bottom: -20px;
+}
+.select-menu .select-btn{
+    display: flex;
+    height: 55px;
+    background: #fff;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 400;
+    border-radius: 8px;
+    align-items: center;
+    cursor: pointer;
+    border: 1px solid black;
+    justify-content: space-between;
+    box-shadow: 0 0 5px rgba(11, 11, 11, 0.1);
+}
+.select-btn img{
+    font-size: 25px;
+    transition: 0.3s;
+}
+.select-btn img:hover{
+    transform: scale(1.1);
+}
+
+
+.options{
+    position: absolute;;  
+    box-shadow: 0 0 10px 10px rgba(0,0,0,0.1);
+    display: none;  
+    z-index: 1; 
+ }
+
+.select-menu.active .options{
+    display: block;
+}
+.option{
+    display: flex;
+    gap: 1px;
+    height: 55px;
+    cursor: pointer;
+    padding: 0 16px;
+    border-radius: 8px;
+    align-items: center;
+    background: #fff;
+}
+.options .option:hover{
+    background: #F2F2F2;
+}
+.option img{
+    font-size: 25px;
+    margin-right: 12px;
+}
+.option .option-text{
+    font-size: 18px;
+    color: #333;
+}
+
+
+.text-copiado-input {
+    font-size: 15px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #2c2c2c;
+    color: black;
+  }
+
+  .copiarBotton {
+    padding: 15px;
+    margin: 2px;
+    font-size: 20px;  
+    background-color: #577eff;  
+    border: 1px solid #577eff;
+    border-radius: 5px;
+}
+
+.componete-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 10px;
+
+}
+
+.container-link{
+
+}
+
+
+.logo { 
+    margin-top: 4rem;
+    border: 4px solid rgb(52, 117, 236);
+    padding: 4px;
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    object-fit: cover;
+ }
+
+ .container_Links{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    flex-direction: column;
+    gap: 10px;
+    font-size: 11px;
+}
+
+
+
+.link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration-line: none;
+    background: rgb(52, 117, 236);
+    color: rgb(255, 255, 255);
+    border-radius: 6px;
+    
+}
+
+.icone {
+    width: 50px;
+    height: px;
+    padding: 0.5rem;
+ }
+
+ .imgSelect{
+     display: none;
+ }
+
+
+
+ 
+input{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    padding: 0 30px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    border-bottom: 2px solid #ccc;
+    border-top: 2px solid transparent;
+    transition: all 0.2s ease;
+}
+
+
+input:is(:focus, :valid){
+    border-bottom-color: #865175;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+fieldset {
+    border:0 none;
+ }
+
+.radio-image label > input{
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+.radio-image label > input + img{
+    cursor:pointer;
+    border:2px solid #EEE;
+    border-radius:15px;
+    padding:10px;
+}
+.radio-image label > input:checked + img{
+    border:4px solid #3F51B5;
+}
+
+.navegarDeVoltaButton{  
+    position: relative;
+    font-size:2rem;
+    top: -200px;
+    left: -5rem;
+    border: none;
+    background-color: #fff;    
+    cursor: pointer;  
+    background-color: Transparent;
+ }
+
+ .mini-site-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10px;
+ }
+
+ .link{
+    width: 200px;
+    padding: 0px 15px 0 8px;
+ }
