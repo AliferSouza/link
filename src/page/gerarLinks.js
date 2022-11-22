@@ -88,18 +88,18 @@ export default function gerarLinks() {
 
                         <label for="F">
                            
-                            <img src="../img/instagram.png" id="instagram" onclick="pegar(id, src)"  class="escolha" alt="instagram"
+                            <img src="./public/img/instagram.png" id="instagram" onclick="pegar(id, src)"  class="escolha" alt="instagram"
                                 height="45px">
                         </label>
 
                         <label for="A">
                            
-                            <img src="../img/whatsapp.png" id="whatsapp" onclick="pegar(id, src)"  class="escolha" alt="whatsapp"
+                            <img src="./public/img/whatsapp.png" id="whatsapp" onclick="pegar(id, src)"  class="escolha" alt="whatsapp"
                                 height="45px">
                         </label>
                         <label for="B">
                             
-                            <img src="../img/youtube.png" id="youtube" onclick="pegar(id, src)" class="escolha" alt="youtube" height="45px">
+                            <img src="./public/img/youtube.png" id="youtube" onclick="pegar(id, src)" class="escolha" alt="youtube" height="45px">
                         </label>
                     </fieldset>
 
