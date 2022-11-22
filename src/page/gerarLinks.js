@@ -82,7 +82,7 @@ export default function gerarLinks() {
                     <fieldset class="radio-image escolhaFoto">
                         <label for="M">
                             
-                            <img src="./img/facebook.png"id="facebook" onclick="pegar(id, src)" name="facebook" class="escolha" alt="facebook"
+                            <img src="./public/img/facebook.png"id="facebook" onclick="pegar(id, src)" name="facebook" class="escolha" alt="facebook"
                                 height="45px">
                         </label>
 
