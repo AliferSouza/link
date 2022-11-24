@@ -1,0 +1,150 @@
+
+
+.voltar-compartilhar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container-minisite-header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+
+}
+.logo { 
+    position: relative; 
+    border: 4px solid rgb(52, 117, 236);
+    padding: 4px;
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    object-fit: cover;
+ }
+ .logomove{
+  top: 90px
+ }
+ .minisite-nome{
+  position: relative;
+  
+}
+
+ .container_Links{
+    margin-top: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    flex-direction: column;
+    gap: 5px;
+    font-size: 11px;
+  
+}
+
+
+.link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration-line: none;
+    background: rgb(52, 117, 236);
+    color: rgb(255, 255, 255);
+    border-radius: 6px;
+    width: 200px;
+    padding: 8px 15px 8px 8px;
+    font-size: 10px;
+    
+}
+
+.icone {
+    width: 50px;
+    padding: 0.5rem;
+ }
+
+ .imgSelect{
+     display: none;
+ }
+
+ .componete-link{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20%;
+  
+ }
+
+ .link-minisite{
+  padding: 5px;
+  border-radius: 10px;
+  background: #333;
+  font-size: 7px;
+  color: #F2F2F2;
+}
+
+.navegarDeVoltaButton{  
+    position: absolute;
+    top:1px;
+    left: 20px;
+    font-size:2rem;
+    border: none;
+    cursor: pointer;  
+    color: #F2F2F2;
+    background-color: Transparent;
+ }
+
+ .componete-minisite{
+  height: 100vh;
+  width: 85vh;
+  background: rgb(113, 163, 240);
+ }
+ 
+ .icone-link-site{
+  width: 30px;
+  position: relative;
+  right: 24%;
+ }
+
+ .compartilhar{ 
+    position: relative;
+    top: 400px;
+    left: 200px;
+    padding: 0px 10px 0px 10px ;
+    font-size: 10px;
+    border-radius: 5px;
+    transform: rotate(270deg);
+    cursor: pointer;
+ }
+
+.animacao{
+  animation: pulse 2s infinite;
+}
+
+ @-webkit-keyframes pulse {
+    0% {
+      -webkit-transform: scale(1);
+    }
+    25% {
+      -webkit-transform: scale(1.1);
+    }
+    50% {
+      -webkit-transform: scale(1);
+    }
+    100% {
+      -webkit-transform: scale(1);
+    }
+  }
+
+
+
+.deletarDoBanco{
+  position: relative;
+  left: 55px;
+  top: -20px;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  z-index: 1000;
+}
+
+

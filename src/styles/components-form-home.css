@@ -1,0 +1,141 @@
+.container{    
+    max-width: 300px;
+    width: 10%;
+    height: 400px;
+    background: #3eb2ff;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+ 
+}
+
+.form{
+    position: relative;
+    top: 8%;
+    padding: 20px 0px 0px 0px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;    
+    gap: 30px;
+    background: #ffffff;
+    border-radius: 8px;
+
+}
+
+
+.title{   
+    color: #f7f7f7;
+    top:12px;
+    left: 10px;   
+    position: relative;
+    font-size: 20px;
+}
+
+.title::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    height: 3px;
+    width: 30px;
+    background-color: #2961b4;
+    border-radius: 25px;
+}
+
+
+.input{
+    position: relative;
+    height: 50px;
+    width: 80%;
+    padding: 0 30px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    border-bottom: 2px solid #ccc;
+    border-top: 2px solid transparent;
+    transition: all 0.2s ease;
+}
+
+.input-logo{
+    display:none; 
+}
+
+
+.label {
+    width: 200px;
+    height: 50px;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+
+    background-color: #3498db;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+ 
+  
+  }
+
+.img{
+    position: relative;
+    left: 10px;
+    border: 4px solid #3498db;
+    border-radius: 5px;
+}
+
+
+.button-home{
+    width: 80%;
+    height: 50px;
+    border-color: #0647f8;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    background: #3eb2ff;
+    color: #ffffff;
+}
+
+.color-input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 10px;
+}
+
+
+
+.container-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap:wrap;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.labelbanner{
+  border-radius: 5px;
+}
+
+
+.labelbanner:hover{
+    border: 1px solid #0647f8;
+ }
+
+
+ 
+.escolhaa{
+    z-index: 10;
+    cursor: pointer;
+    border-radius: 5px;
+   
+}
+
+
+.escolhaa:hover{
+     border: 2px solid #0647f8;
+     opacity: 50%;
+}

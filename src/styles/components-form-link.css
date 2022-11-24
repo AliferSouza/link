@@ -1,0 +1,133 @@
+.container{    
+    max-width: 300px;
+    width: 100%;
+    height: 441px;
+    background: #3eb2ff;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+ 
+}
+
+.form-link{
+    position: relative;
+    width: 300px;
+    top: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;    
+    gap: 40px;
+    background: #ffffff;
+    border-radius: 8px;
+
+}
+
+.title-link{   
+    position: relative;
+    color: #ffffff;
+    top: 10px;
+    left: 20px;  
+    font-size: 24px;
+    font-weight: 600;
+ 
+}
+
+.title-link::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    height: 3px;
+    width: 30px;
+    background-color: #ffffff;
+    border-radius: 25px;
+}
+
+.input-link{
+    position: relative;
+    top: 15px;
+    height: 50px;
+    width: 90%;
+    padding: 0 30px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    border-bottom: 2px solid #ccc;
+    border-top: 2px solid transparent;
+    transition: all 0.2s ease;
+}
+.input-link:hover{
+    border-bottom: 2px solid #0647f8;
+   
+ 
+}
+
+.button-link{
+    color: #ffffff;
+    width: 80%;
+    height: 50px;
+    border-color: #0647f8;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
+
+.escolhaIcone{
+    position: relative;
+    top: 20px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap:wrap;
+    gap: 15px;
+    border: none;
+    cursor: pointer;
+
+}
+
+.container-button-link-minisite{
+    width: 280PX;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+.button-link-minisite{
+    font-size: 10px;
+    color: #ffffff;
+    width: 80%;
+    height: 30px;
+    border-color: #0647f8;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+
+}
+
+.escolha{
+    z-index: 10;
+    cursor: pointer;
+   
+}
+
+
+.escolha:hover{
+    border-radius: 20px;
+    border: 2px solid #0647f8;
+}
+
+
+.container_gerarlink{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #5464a8;
+}
+
+
+
